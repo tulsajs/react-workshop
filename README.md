@@ -68,3 +68,6 @@ In react sometimes you need to use lifecycle hooks to approach different situati
 
 State management in vanilla react can get you pretty far with just a simple application. In this stage we will use the state management to update a color of the submit button that we added earlier.
 
+#### Stage 9 Composible components
+
+This will show how to use this.props.children in order to pass the inner elements of a component through so that for instance you could have a card component that you pass in several other components such as the title component and body.
