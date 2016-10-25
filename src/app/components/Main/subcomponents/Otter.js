@@ -3,6 +3,30 @@ import { Link } from 'react-router';
 
 export default class Otter extends Component {
 
+  constructor (props) {
+    super(props);
+  }
+
+  componentWillMount () {
+    console.log('**** component will mount ****');
+  }
+
+  componentDidMount () {
+    console.log('**** component mounted ****');
+  }
+
+  componentWillUnmount () {
+    console.log('**** component will unmount ****');
+  }
+
+  componentWillUpdate () {
+    console.log('**** component will update ****');
+  }
+
+  componentDidUpdate () {
+    console.log('**** component did update ****');
+  }
+
   getText () {
     console.log(this.refs.name.value);
   }
