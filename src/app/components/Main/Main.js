@@ -6,7 +6,7 @@ export default class Main extends Component {
   render () {
     return (
       <div className='large-font'>
-        <Otter></Otter>
+        <Otter title='hello from the props side'></Otter>
       </div>
     );
   }
