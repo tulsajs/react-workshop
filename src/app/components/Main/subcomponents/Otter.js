@@ -5,6 +5,10 @@ export default class Otter extends Component {
 
   constructor (props) {
     super(props);
+
+    this.state = {
+      color: 'red'
+    };
   }
 
   componentWillMount () {
@@ -27,8 +31,8 @@ export default class Otter extends Component {
     console.log('**** component did update ****');
   }
 
-  getText () {
-    console.log(this.refs.name.value);
+  setButtonColor () {
+    this.setState({color: this.refs.name.value});
   }
 
   // Note the :: operator is just a shortcut for .bind(this)
@@ -37,7 +41,7 @@ export default class Otter extends Component {
       <div>
         <h3>{this.props.title}</h3>
         <input type='text' ref='name' />
-        <button type='submit' onClick={::this.getText}> Get Name</button>
+        <button type='submit' style={{backgroundColor: this.state.color}} onClick={::this.setButtonColor}> Get Name</button>
         <div>
           <Link to={'/hello'}>go to hello world</Link>
         </div>
