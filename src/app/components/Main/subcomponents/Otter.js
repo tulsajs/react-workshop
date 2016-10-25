@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 export default class Otter extends Component {
 
@@ -13,6 +14,9 @@ export default class Otter extends Component {
         <h3>{this.props.title}</h3>
         <input type='text' ref='name' />
         <button type='submit' onClick={::this.getText}> Get Name</button>
+        <div>
+          <Link to={'/hello'}>go to hello world</Link>
+        </div>
       </div>
     );
   }
