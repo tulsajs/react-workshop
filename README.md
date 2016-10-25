@@ -36,6 +36,13 @@ And then head over to [localhost:8080](http://localhost:8080/) to see the projec
 
 ### Stages
 
+##### Notes
+
+In order to quickly switch between staging you just need to check out the stage.
+
+Example: 
+`git checkout stage-8-using-vanilla-state`
+
 #### Stage 1 Hello World
 
 In this stage we will show a scaffold view of how the folder structure will be setup for the application and go over exactly what it takes to get up and running with react and react-router.
