@@ -33,3 +33,10 @@ npm run server
 ```
 
 And then head over to [localhost:8080](http://localhost:8080/) to see the project live.
+
+### Stages
+
+#### Stage 1 Hello World
+
+In this stage we will show a scaffold view of how the folder structure will be setup for the application and go over exactly what it takes to get up and running with react and react-router.
+
